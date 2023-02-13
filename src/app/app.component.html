@@ -1,0 +1,38 @@
+<h1 class="title">{{title}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="cuadrado">
+        <form action="" method="post"></form>
+        <form class="form my-3">
+          <input [(ngModel)]='nombreInput' name="nombre" class="input-nombre" type="text" placeholder="Nombre" required>
+          <br>
+          <mat-radio-group name="opciones" [(ngModel)]="sexoSeleccionado">
+            <mat-radio-button *ngFor="let op of tipoSexo" name="opciones" [value]="op">
+              {{op}}
+            </mat-radio-button>
+          </mat-radio-group>
+
+          <app-imcdetail
+            (alturaCreated)="onAlturaCreated($event)" (pesoCreated)="onPesoCreated($event)" (borrar)="true">
+          </app-imcdetail>
+
+          <div class="w-100 p-3 mt-1 d-inline-block">
+            <p>{{mensejeGeneradoImc}}</p>
+          </div>
+
+          <div class="botones-inferiores">
+            <input [disabled]="click || !imcForm" (click)="calculoImcClick()" type="submit" value="Enviar"
+                   class="button-submit btn btn-primary">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col">
+      <div class="historial">
+        <app-historial>
+        </app-historial>
+      </div>
+    </div>
+  </div>
+</div>

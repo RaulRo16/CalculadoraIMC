@@ -1,0 +1,16 @@
+<div class="botones">
+  <div class="altura d-flex justify-content-around my-3">
+    <button class="btn btn-danger btn-lg" (click)="restarAltura(1)">-1</button>
+    <span class="align-self-center">{{numeroAltura}} cm</span>
+    <button class="btn btn-primary btn-lg" (click)="sumarAltura(1)">+1</button>
+  </div>
+  <br>
+  <div class="peso d-flex justify-content-around">
+    <button class="btn btn-danger btn-lg" (click)="restarPeso(1)">-1</button>
+    <span class="align-self-center">{{numeroPeso}} Kg</span>
+    <button class="btn btn-primary btn-lg" (click)="sumarPeso(1)">+1</button>
+  </div>
+  <input (click)="VariablesaCero()" type="reset" value="Reset" class="button-reset btn btn-danger">
+</div>
+
+

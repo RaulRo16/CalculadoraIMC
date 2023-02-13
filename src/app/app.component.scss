@@ -1,0 +1,54 @@
+.title {
+  text-align: center;
+  font-family: "Adobe Caslon Pro", serif;
+}
+
+.cuadrado {
+  border-style: solid;
+  margin: 0 auto;
+  width: 30em;
+  height: 40em;
+}
+
+.form {
+  text-align: center;
+}
+
+.input-nombre {
+  margin: 2rem;
+  padding: 0.7rem;
+  width: 20rem;
+}
+
+.mat-radio-group{
+  display:flex ;
+  width:100%;
+  font-size:1em;
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+.input-altura, .input-peso {
+  margin: 0.5rem;
+  padding: 0.7rem;
+  width: 20rem;
+}
+
+.cuadrado-resultado {
+  //border-style: solid;
+  margin: 0 auto;
+  width: 14rem;
+  height: 10rem;
+}
+
+.botones-inferiores {
+  display: flex;
+  align-items: flex-end;
+  height: 8.65rem;
+  justify-content: space-between;
+}
+
+.button-reset, .button-submit {
+  width: 7rem;
+}
+
